@@ -40,7 +40,7 @@ const AddCommentModal: React.FC = () => {
                     Add Comment
                 </DialogTitle>
                 <AddCommentForm
-                    productId={data?.productId ?? ""}
+                    productId={data?.productId as string}
                     onSuccess={() => dispatch(closeModal())}
                 />
             </DialogContent>

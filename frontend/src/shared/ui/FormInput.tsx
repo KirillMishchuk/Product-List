@@ -1,6 +1,6 @@
 // shared/ui/FormInput.tsx
 import { type InputHTMLAttributes, forwardRef } from "react";
-import { Input } from "./Input";
+import { Input } from "./input";
 
 type FormInputProps = {
     label: string;
