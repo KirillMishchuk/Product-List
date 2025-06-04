@@ -1,0 +1,1974 @@
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
+Софтовая часть собеседования
+1. Расскажите о себе. Расскажите о последнем проекте. Какая была ваша роль?  
+Что хотят узнать: насколько вы были вовлечены, в чем была ваша зона ответственности, как вы работали в команде. 
+Как отвечать:
+Опишите цель проекта, вашу роль и инструменты.
+Упомяните сложности и как вы с ними справились: например, «На проекте не было дизайн-системы — я предложил и внедрил компоненты, это ускорило разработку».
+Делайте акцент на командной работе и коммуникации.
+
+   My name is Kyril, I'm a software engineer and I have been working as a frontend developer for approximately 8 years. I'm an engineer by training and started my career as a backend developer, but soon I moved to frontend end development because I realized that visual part impresses me more than internal part. 
+I specialize mainly in React but also well-experienced in other popular frontend frameworks. Also worked a little bit with NodeJS, Python. 
+ 
+   My latest project was a Mining Company system. The main idea of the tool is to give the opportunity to simulate different mining processes with a huge amount of settings and conditions. And also to make calculations of productivity and profitability and show results in appropriate form.
+   My role on the project was software engineer, my responsibilities are pretty much typical for frontend developer, and in addition some lead activities like code reviewing, discussing features and architecture, preparing technical designs, onboarding and interviewing new members.
+   As a frontend framework we used react, backend part was written mainly on python and partially on NodeJS. 
+   Regarding the interesting functionality, my team was mostly working on 2 important modules: 
+- field visualization system, which included canvas and 3d visualization with the ability to put and modify different objects and monitor whole processes of mining.
+- live-calculation visualization system which performs calculations and informs user about the process of execution via socket connection in the form of charts, tables and tool panel. The entire calculation process is performed on server. Frontend shows live visualization how it's going on.   
+   After the whole process becomes more/less stable we decided to cover main modules with unit and e2e tests.             
+
+
+
+2. Были ли конфликты в команде? Как вы их решали?
+Что хотят узнать: умеете ли вы решать конфликты конструктивно и сохранять продуктивную атмосферу.
+Как отвечать:
+Пример: «Было недопонимание по срокам между фронтендом и бэкендом. Я инициировал обсуждение, составили общий таймлайн, и с тех пор синхронизировались каждую неделю. Это помогло наладить прозрачную коммуникацию».
+Завершайте ответом с результатом: улучшилось взаимодействие, ускорилась разработка, уменьшились недочеты.
+
+Actually I can't recollect some serious conflicts inside team, from my point of view it's not the right place to show negative emotions and sort things out. Sometimes there were some conflicts in opinions during PR reviewing which ends up with long discussions. And I remember conflicts with backend developers related to constantly change fields and data types in API. At first we used ZOD library for incoming data validation, but then integrated API generator to avoid errors appearing and regular types refactoring. This means that we could entirely rely on the generated interfaces      
+
+
+
+3. Как вы планируете свою работу? Знаете ли вы Kanban, Scrum?
+Что хотят узнать: умеете ли работать в гибкой методологии, сами себя организовывать.
+Как отвечать:
+Расскажите, как вы работаете в Scrum: «Мы планируем задачи на спринт, каждый день стендапы, после спринта ретроспектива. Это помогает выявлять узкие места и постоянно улучшаться».
+Упомяните работу в Kanban, если было: «В другом проекте использовали Kanban, он хорошо подходил для флоу без жестких дедлайнов».
+
+Yep, on each project we used some methodology, It was mostly scrum, we have daily standup where we can share current information about the task statuses and problems or to have quick discussion about the feature which involves a lot a teammates; pre-grooming and grooming meetings to discuss incoming features or bugs, review (demo) and planning and retrospective as well. 
+Also sometimes the active phase of development ends or project goes to service or support and we can migrate to Kanban approach with card desk without deadlines, clear estimations.     
+
+
+
+4. Что было вашим достижением на проекте?
+Что хотят узнать: ваш вклад, не только технический, но и командный.
+Как отвечать:
+Расскажите о проблеме → ваших действиях → результате.
+Пример:
+«Мы часто получали баги из-за несогласованности в API. Я предложил внедрить валидацию типов данных приходящих с сервера используя Zod, это уменьшило баги на 40% по нашим метрикам».
+
+In my latest project during the development we often faced with requirements mutation and since the system was pretty complex and had a lot of interconnections between modules I proposed to integrate e2e tests for general parts of the app to avoid regression testing. It was very difficult to prove necessity but in the long run it saved a lot of QA time and got rid of potential errors
+
+
+
+5. Что вам не нравится в вашей работе? Что вы делаете, чтобы это изменить?
+Что хотят узнать: как вы справляетесь с рутинными задачами, не жалуетесь ли.
+Как отвечать:
+Не говорите: «Не люблю верстку/тесты/созвоны».
+Лучше: «Верстка занимает много времени, поэтому я создал шаблоны и сниппеты — это ускорило процесс», или «Я не фанат созвонов, поэтому готовлюсь заранее, чтобы говорить по делу и экономить всем время».
+
+Actually I can't name things that I don't like in my work, probably only similar and monotonous tasks can quickly burn me out and make me tired. That's why I'm trying to keep/maintain the balance in my work and organize my day to work in different parts of functionality. Also I don't miss a chance to somehow automate routine tasks, I collect some snippets, helper functions which are in common use in order to not waste time on it again.
+Also we always need to set aside some time for self-education.   
+
+
+
+6. Что вы делаете, когда не знаете, как решить задачу?
+Что хотят узнать: самостоятельность, умение учиться, просить помощи.
+Как отвечать:
+«Сначала разбираюсь сам: читаю доку, пробую варианты. Если не помогает — задаю уточняющие вопросы коллегам. Всегда стараюсь сформулировать проблему четко, чтобы не тратить чужое время».
+
+Primarily I read the documentation or find the detailed guide article or video which describes main steps to solve the task. If this is unsuccessful I would ask my colleagues for help and it's 99 percentage that someone from department has an answer. Also it's very important to formulate the question clearly in order to not to waste another people's time.    
+
+
+
+7. Что вам больше нравится: верстка или логика?
+Что хотят узнать: гибкость, баланс в подходе.
+Как отвечать:
+«Мне нравится и то, и другое. Верстка — это про визуальный результат и доступность, логика — про архитектуру и масштабируемость. Я стараюсь развиваться в обоих направлениях, но сейчас больше фокус на ___».
+
+I guess we can't consider one without other, they are inseparable. If you choose only on direction you'll not see the full result of your work, the app will be static. I like both, visual part and accessibility together with logic, architecture and scalability. I develop myself in both directions but now I'm mainly focused on algorithmic part. 
+
+
+
+8. Как вы развиваетесь как разработчик?
+Что хотят узнать: мотивация, самообучение, рост.
+Как отвечать:
+Расскажите про регулярное чтение документации, статей, участие в митапах, пет-проекты, обучение через ошибки.
+
+I'm a bit self-critical of myself and this makes me constantly feel the need for self-development. I have few favourite youtube channels which help me to keep track of main updates, also some interesting articles and docs, and pet projects as well to slightly touch some technology. Our company regularly holds meetups and we have individual development plan and a huge list of topics that we need to cover.    
+
+
+
+9. Бывало ли, что вы не укладывались в сроки? Что делали?
+Что хотят узнать: как вы справляетесь с дедлайнами и стрессом.
+Как отвечать:
+«Да, было. Мы недооценили объем задачи. Я уведомил тимлида заранее, пересобрали приоритеты и выделили дополнительного разработчика. В итоге задачу закрыли на следующий день, не повлияв на остальной спринт».
+
+Yep, sure, sometimes tasks could be underestimated due to requirements mutation or insufficient description. So in this case there are few possible solutions. At first we need to prioritize and re-estimate other tasks in order to have understanding if it is possible to move something to the upcoming sprint or retrieve some time from the overestimated tasks. In such cases better to have time buffer in each sprint to cover such situations. Another way is to build fast and working functionality and not care of clean architecture and code, typification and tests. And plan time for the upcoming sprint to do refactoring.    
+
+
+
+10. Что вы делаете, если в команде плохая коммуникация?
+Что хотят узнать: проактивность, зрелость, вклад в команду.
+Как отвечать:
+«Я стараюсь первым инициировать диалог, выносить обсуждения в общее поле, писать понятные тикеты. Также предлагаю использовать чат-ботов или чек-листы — это сильно повышает прозрачность процессов».
+
+It's a big problem and it could lead to misunderstandings and misleadings that slow down the development. I'm trying to initiate communication, to use common chats or chats for special feature. Also it is necessary to write detailed task description and clarify everything before we start development.
+
+    
+
+11. Что является самым сложным для вас в общении с другими?
+Что хотят узнать: умеете ли вы работать в команде, справляться с трудностями в коммуникации, осознаете ли свои слабые стороны и развиваете ли их.
+Как отвечать:
+Выберите честную, но не критичную сложность (например, непонимание, разные стили общения).
+ Расскажите, как вы это осознали и что делаете, чтобы с этим работать.
+ Покажите, что вы цените общение и умеете делать его продуктивным.
+Пример:
+«Иногда бывает сложно, когда люди не сразу формулируют чётко, чего они хотят — особенно если обсуждение идет устно, на встрече. Раньше это приводило к недопониманиям и переделкам. Сейчас я сразу уточняю детали, стараюсь переформулировать и переспросить: “Правильно ли я понял, что…” Это помогает наладить контакт и сделать общение понятнее. Также если что-то принципиальное, я фиксирую договоренности письменно — например, в комментариях к задаче. Это снижает риск недопонимания и улучшает командную работу.»
+
+
+
+
+12. Как вы относитесь к переработкам?
+Что хотят узнать: умеете ли вы управлять временем, насколько вы устойчивы к стрессу, готовы ли брать на себя ответственность, но без выгорания.
+Как отвечать:
+Покажите, что вы ответственны и при необходимости можете вложиться, но при этом умеете планировать работу и считаете переработки исключением, а не нормой.
+Важно подчеркнуть, что вам важно качество, эффективность и здоровье команды.
+Пример:
+«Стараюсь планировать работу так, чтобы укладываться в рабочее время. Но если бывают форс-мажоры перед релизом — могу задержаться, чтобы помочь команде. Главное, чтобы переработки были исключением, а не системой. В одном из проектов мы проанализировали причины частых авралов — оказалось, что не хватало буфера в планировании. Я предложил оставлять 10–15% времени на непредвиденные задачи, и это помогло избежать регулярных переработок. Это улучшило мотивацию команды и снизило уровень стресса.»
+
+
+
+
+Главные принципы поведения на софтовой части собеседования:
+Фокус на результатах и решениях. Не просто рассказывайте «что было», а обязательно — как вы решили проблему и чего добились.
+Не жалуйтесь. Даже если работа не идеальна — покажите, что вы умеете адаптироваться и менять процессы.
+Командная работа. Подчеркивайте вклад в команду, коммуникацию, инициативу.
+Спокойствие и конструктивность. Даже про конфликты говорите без обвинений — через призму «что улучшили».
+Проактивность. Подчеркивайте случаи, где вы улучшили процесс, внедрили практику, предложили решение.
+
+
+
