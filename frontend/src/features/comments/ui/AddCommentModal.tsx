@@ -3,7 +3,7 @@ import React from "react";
 import {
     DialogOverlay,
     DialogContent,
-    DialogTrigger,
+    // DialogTrigger,
     DialogTitle,
     Dialog,
 } from "@shared/ui/dialog";
