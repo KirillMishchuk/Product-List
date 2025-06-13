@@ -1,21 +1,57 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+import mkcert from "vite-plugin-mkcert";
+import tsconfigPaths from "vite-tsconfig-paths";
+import svgr from "vite-plugin-svgr";
+import inject from "@rollup/plugin-inject";
+import nodePolyfills from "rollup-plugin-polyfill-node";
+import { NodeGlobalsPolyfillPlugin } from "@esbuild-plugins/node-globals-polyfill";
+
 import tailwindcss from "@tailwindcss/vite";
 
-// https://vite.dev/config/
 export default defineConfig({
-    plugins: [react(), tailwindcss()],
+    plugins: [react(), mkcert(), tsconfigPaths(), svgr(), tailwindcss()],
+    server: {
+        port: 9001,
+        proxy: {},
+        https: {},
+        host: true,
+    },
     resolve: {
         alias: {
-            "@entities": path.resolve(__dirname, "src/entities"),
-            "@features": path.resolve(__dirname, "src/features"),
-            "@widgets": path.resolve(__dirname, "src/widgets"),
-            "@pages": path.resolve(__dirname, "src/pages"),
-            "@shared": path.resolve(__dirname, "src/shared"),
-            "@app": path.resolve(__dirname, "src/app"),
-            "@components": path.resolve(__dirname, "src/components"),
-            "@": path.resolve(__dirname, "./src"),
+            buffer: "buffer",
+            process: "process/browser",
+        },
+    },
+    build: {
+        rollupOptions: {
+            plugins: [
+                inject({ Buffer: ["buffer/", "Buffer"] }),
+                nodePolyfills(),
+            ],
+        },
+    },
+    optimizeDeps: {
+        esbuildOptions: {
+            define: {
+                global: "globalThis",
+            },
+            plugins: [
+                NodeGlobalsPolyfillPlugin({
+                    buffer: true,
+                    process: true,
+                }),
+            ],
+        },
+    },
+    css: {
+        preprocessorOptions: {
+            scss: {
+                loadPaths: [path.join(__dirname, "src")],
+                api: "modern-compiler",
+                quietDeps: true,
+            },
         },
     },
 });

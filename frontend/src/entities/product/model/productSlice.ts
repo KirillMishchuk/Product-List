@@ -24,6 +24,8 @@ const productSlice = createSlice({
                 return;
             }
 
+            console.log("add", parsed.data);
+
             state.items = parsed.data;
             state.status = "succeeded";
         },
@@ -55,6 +57,8 @@ const productSlice = createSlice({
                 state.status = "loading";
             })
             .addCase(fetchProducts.fulfilled, (state, action) => {
+                console.log("addCase", action.payload);
+
                 state.items = action.payload;
                 state.status = "succeeded";
             })

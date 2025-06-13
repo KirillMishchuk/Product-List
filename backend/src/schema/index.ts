@@ -1,5 +1,7 @@
 import { buildSchema } from "graphql";
 
+import { GraphQLSchema, GraphQLObjectType, GraphQLString } from "graphql";
+
 export const schema = buildSchema(`
   type Product {
     id: ID!

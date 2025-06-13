@@ -10,6 +10,8 @@ export const fetchProducts = createAsyncThunk<ProductType[]>(
 
         const result = productArraySchema.safeParse(mockProducts);
 
+        console.log("result", result.data);
+
         if (!result.success) {
             throw new Error("Product data is invalid");
         }

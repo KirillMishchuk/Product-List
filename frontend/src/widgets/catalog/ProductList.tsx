@@ -1,9 +1,4 @@
-import {
-    addProduct,
-    addProducts,
-    ProductCard,
-    type ProductType,
-} from "@entities/product";
+import { addProducts, ProductCard } from "@entities/product";
 import { useAppDispatch, useAppSelector } from "@shared/lib/hooks";
 import { addItem } from "@features/basket";
 import { toBasketItem } from "@shared/lib/toBasketItem";
@@ -12,23 +7,20 @@ import { SearchBar } from "@features/search";
 import { useEffect } from "react";
 import { openModal } from "@features/uiModal";
 import { Plus } from "lucide-react";
-import { useProductsFromApollo } from "@entities/product/api/useProductsFromApollo";
-import { Spinner } from "@shared/ui/Spinner";
 import { FullScreenLoader } from "@shared/ui/FullScreenLoader";
 import { Link } from "react-router-dom";
 import { Button } from "@shared/ui";
+import { useProductDataByType } from "@shared/hooks/useProductDataByType";
 
 export const ProductList = () => {
     const dispatch = useAppDispatch();
 
-    const { data, loading, error, refetch } = useProductsFromApollo();
+    const { data, loading, error, refetch } = useProductDataByType();
 
     const products = useAppSelector(selectFilteredAndSortedProducts);
 
     useEffect(() => {
         if (data?.products && !loading && !error) {
-            console.log("update");
-
             dispatch(addProducts(data.products));
         }
     }, [data, dispatch]);

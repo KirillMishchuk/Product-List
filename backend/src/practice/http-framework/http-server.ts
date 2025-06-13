@@ -5,6 +5,7 @@ import parseUrl from "./parseUrl";
 import mongoose from "mongoose";
 import productRouter from "./src/products/products-router";
 import customCors from "./cors";
+import commentRouter from "./src/comments/comments-router";
 
 const PORT = process.env.PORT || 5000;
 
@@ -16,6 +17,7 @@ application.use(parseUrl("http://localhost:4200"));
 
 application.addRouter(userRouter);
 application.addRouter(productRouter);
+application.addRouter(commentRouter);
 
 const start = async () => {
     try {

@@ -16,7 +16,7 @@ export const SearchBar: React.FC<Props> = ({ children }: Props) => {
     };
 
     return (
-        <div className="w-full max-w-full flex justify-between items-center">
+        <div className="w-full max-w-full gap-2 flex justify-between items-center">
             <Input
                 type="text"
                 placeholder="Search products..."
