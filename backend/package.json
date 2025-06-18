@@ -4,10 +4,12 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon --watch src --exec tsx src/server.ts",
         "dev-env": "cross-env PORT=4000 NODE_ENV=development NODE_TEST_VAR=development nodemon --watch src --exec tsx src/server.ts",
         "dev-http": "cross-env PORT=4200 nodemon --watch src --exec tsx src/practice/http-framework/http-server.ts",
-        "dev-https": "cross-env PORT=4000 nodemon --watch src --exec tsx src/practice/https-server/https-server.ts"
+        "dev-https": "cross-env PORT=4000 nodemon --watch src --exec tsx src/practice/https-server/https-server.ts",
+        "dev-graphql": "nodemon --watch src --exec tsx src/graphql/server.ts",
+        "dev-http-db": "cross-env PORT=4200 DB_SOURCE=sample_mflix nodemon --watch src --exec tsx src/http-server/http-server.ts",
+        "dev-http-db-test": "cross-env PORT=4200 DB_SOURCE=test nodemon --watch src --exec tsx src/practice/http-framework/http-server.ts"
     },
     "keywords": [],
     "author": "",

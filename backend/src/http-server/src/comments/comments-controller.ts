@@ -5,7 +5,7 @@ export const getComments = async (req: any, res: any) => {
     //     return res.send(users.find((user) => user.id == req.params.id));
     // }
 
-    let comments = await Comment.find();
+    let comments = await Comment.find().limit(1000);
 
     console.log("***", req.params.type);
 

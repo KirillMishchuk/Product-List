@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+    http-api:
+        build:
+            context: .
+            dockerfile: Dockerfile.http
+        ports:
+            - "4200:4200"
+        environment:
+            - NODE_ENV=production
+
+    graphql-api:
+        build:
+            context: .
+            dockerfile: Dockerfile.graphql
+        ports:
+            - "4000:4000"
+        environment:
+            - NODE_ENV=production

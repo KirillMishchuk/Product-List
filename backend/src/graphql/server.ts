@@ -1,10 +1,10 @@
 /* practice */
-import "./practice/index.ts";
+import "../practice/index.js";
 
 import express from "express";
 import { graphqlHTTP } from "express-graphql";
 import cors from "cors";
-import { schema } from "./schema";
+import { schema } from "./schema/index.js";
 import { rootResolver } from "./resolvers";
 
 const app = express();
